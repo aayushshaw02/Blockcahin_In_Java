@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Blockchain with Java/task" />
+            <option value="$PROJECT_DIR$/Blockchain with Java/task/build/classes/java" />
+            <option value="$PROJECT_DIR$/Blockchain with Java/task/build/generated/sources/annotationProcessor/java" />
+            <option value="$PROJECT_DIR$/Blockchain with Java/task/build/generated/sources/headers/java" />
+            <option value="$PROJECT_DIR$/Blockchain with Java/task/build/reports/tests" />
+            <option value="$PROJECT_DIR$/Blockchain with Java/task/build/test-results" />
+            <option value="$PROJECT_DIR$/Blockchain with Java/task/build/tmp" />
+            <option value="$PROJECT_DIR$/Topics/Abstract factory/Abstract Factory Quiz" />
+            <option value="$PROJECT_DIR$/Topics/Abstract factory/Burgers" />
+            <option value="$PROJECT_DIR$/Topics/Abstract factory/Disadvantages of the pattern" />
+            <option value="$PROJECT_DIR$/Topics/Abstract factory/Laptop factory" />
+            <option value="$PROJECT_DIR$/Topics/Abstract factory/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Abstract factory/What does the pattern do" />
+            <option value="$PROJECT_DIR$/Topics/Class Loader/Class identifier" />
+            <option value="$PROJECT_DIR$/Topics/Class Loader/Classloader ordering" />
+            <option value="$PROJECT_DIR$/Topics/Class Loader/Delegation model" />
+            <option value="$PROJECT_DIR$/Topics/Class Loader/First class loader" />
+            <option value="$PROJECT_DIR$/Topics/Class Loader/Kind of exception" />
+            <option value="$PROJECT_DIR$/Topics/Class Loader/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Class Loader/What class loader is used" />
+            <option value="$PROJECT_DIR$/Topics/Encapsulating object creation/Clock factory" />
+            <option value="$PROJECT_DIR$/Topics/Encapsulating object creation/Factories" />
+            <option value="$PROJECT_DIR$/Topics/Encapsulating object creation/Factories and their clients" />
+            <option value="$PROJECT_DIR$/Topics/Encapsulating object creation/How we use factories" />
+            <option value="$PROJECT_DIR$/Topics/Encapsulating object creation/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Factory method/Burger store" />
+            <option value="$PROJECT_DIR$/Topics/Factory method/Robot" />
+            <option value="$PROJECT_DIR$/Topics/Factory method/Robot factory" />
+            <option value="$PROJECT_DIR$/Topics/Factory method/The purpose of the pattern" />
+            <option value="$PROJECT_DIR$/Topics/Factory method/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Factory method/Where to use the pattern" />
+            <option value="$PROJECT_DIR$/Topics/Generic methods/Class type parameters" />
+            <option value="$PROJECT_DIR$/Topics/Generic methods/Declaring a method" />
+            <option value="$PROJECT_DIR$/Topics/Generic methods/Print content" />
+            <option value="$PROJECT_DIR$/Topics/Generic methods/The first element" />
+            <option value="$PROJECT_DIR$/Topics/Generic methods/The usage of parameters" />
+            <option value="$PROJECT_DIR$/Topics/Generic methods/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Kryo benefits" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Kryo performance" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Kryo thread safety" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Serialization" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Serialization/build/classes/java" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Serialization/build/generated/sources/annotationProcessor/java" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Serialization/build/generated/sources/headers/java" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Serialization/build/reports/tests" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Serialization/build/test-results" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Serialization/build/tmp" />
+            <option value="$PROJECT_DIR$/Topics/Kryo/Theory" />
+            <option value="$PROJECT_DIR$/Topics/LocalDate/Convert numbers to days" />
+            <option value="$PROJECT_DIR$/Topics/LocalDate/LocalDate class" />
+            <option value="$PROJECT_DIR$/Topics/LocalDate/Representing a date" />
+            <option value="$PROJECT_DIR$/Topics/LocalDate/Similar date" />
+            <option value="$PROJECT_DIR$/Topics/LocalDate/The first and the last day of a month" />
+            <option value="$PROJECT_DIR$/Topics/LocalDate/The n-th day from the end of a month" />
+            <option value="$PROJECT_DIR$/Topics/LocalDate/Theory" />
+            <option value="$PROJECT_DIR$/Topics/LocalDate/Working with dates" />
+            <option value="$PROJECT_DIR$/Topics/LocalDateTime/Add 11 hours and print the date" />
+            <option value="$PROJECT_DIR$/Topics/LocalDateTime/Add days and subtract hours" />
+            <option value="$PROJECT_DIR$/Topics/LocalDateTime/Create LocalDateTime" />
+            <option value="$PROJECT_DIR$/Topics/LocalDateTime/LocalDateTime class" />
+            <option value="$PROJECT_DIR$/Topics/LocalDateTime/The passed hours since the beginning of year" />
+            <option value="$PROJECT_DIR$/Topics/LocalDateTime/Theory" />
+            <option value="$PROJECT_DIR$/Topics/LocalTime/Millisecond precision" />
+            <option value="$PROJECT_DIR$/Topics/LocalTime/Return time without seconds" />
+            <option value="$PROJECT_DIR$/Topics/LocalTime/Same time" />
+            <option value="$PROJECT_DIR$/Topics/LocalTime/Seconds between two time points" />
+            <option value="$PROJECT_DIR$/Topics/LocalTime/Seconds since start of a day" />
+            <option value="$PROJECT_DIR$/Topics/LocalTime/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Memento/Downsides" />
+            <option value="$PROJECT_DIR$/Topics/Memento/Reference type" />
+            <option value="$PROJECT_DIR$/Topics/Memento/Roll back" />
+            <option value="$PROJECT_DIR$/Topics/Memento/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Memento/Undo and redo" />
+            <option value="$PROJECT_DIR$/Topics/Memento/Use cases" />
+            <option value="$PROJECT_DIR$/Topics/Nested classes/Create prototype" />
+            <option value="$PROJECT_DIR$/Topics/Nested classes/Find min and max" />
+            <option value="$PROJECT_DIR$/Topics/Nested classes/Hmm, what are my rights" />
+            <option value="$PROJECT_DIR$/Topics/Nested classes/Make slices" />
+            <option value="$PROJECT_DIR$/Topics/Nested classes/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Nested classes/To be static or not to be" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Getting the max element of a stack" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Match methods" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Methods" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Stack implementation" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Using deque" />
+            <option value="$PROJECT_DIR$/Topics/Stack/Which brackets are balanced" />
+            <option value="$PROJECT_DIR$/Topics/Standard functional interfaces/Accounts" />
+            <option value="$PROJECT_DIR$/Topics/Standard functional interfaces/Describe the function" />
+            <option value="$PROJECT_DIR$/Topics/Standard functional interfaces/Functional interfaces utilization" />
+            <option value="$PROJECT_DIR$/Topics/Standard functional interfaces/Interface matching" />
+            <option value="$PROJECT_DIR$/Topics/Standard functional interfaces/Package java.util.function" />
+            <option value="$PROJECT_DIR$/Topics/Standard functional interfaces/Theory" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,14 @@
+content:
+  - LocalDate
+  - LocalDateTime
+  - LocalTime
+  - Class Loader
+  - Generic methods
+  - Stack
+  - Encapsulating object creation
+  - Factory method
+  - Abstract factory
+  - Nested classes
+  - Memento
+  - Standard functional interfaces
+  - Kryo

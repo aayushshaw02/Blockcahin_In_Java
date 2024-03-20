@@ -1,0 +1,9 @@
+content:
+  - Theory
+  - "Add second, get second"
+  - Same time
+  - Get hour
+  - Millisecond precision
+  - Seconds between two time points
+  - Seconds since start of a day
+  - Return time without seconds

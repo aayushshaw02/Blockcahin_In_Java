@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Clients ask you to provide functionality for exporting files in different
+      formats
+  - text: Gamers want a flexible mechanism of character customization
+  - text: Someone wants to have a light interface for a complex system
+  - text: Users want to receive messages from the source to which they are subscribed
+files:
+  - name: src/Task.java
+    visible: true
+    text: |
+      // You can experiment here, it won’t be checked
+      
+      public class Task {
+        public static void main(String[] args) {
+          // put your code here
+        }
+      }
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/5763#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 15 Mar 2024 06:07:27 UTC"
+record: -1
+selected_options:
+  - 0
+local_check: false

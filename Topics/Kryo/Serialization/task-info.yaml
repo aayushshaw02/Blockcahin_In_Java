@@ -1,0 +1,167 @@
+type: edu
+files:
+  - name: src/kryowizardry/Main.java
+    visible: false
+    text: |
+      package kryowizardry;
+      
+      import com.esotericsoftware.kryo.Kryo;
+      import com.esotericsoftware.kryo.io.Input;
+      
+      import java.io.FileInputStream;
+      import java.io.IOException;
+      import java.util.Objects;
+      import java.util.Scanner;
+      
+      public class Main {
+          public static void main(String[] args) {
+              var scanner = new Scanner(System.in);
+      
+              var name = scanner.nextLine();
+              var isEvil = Boolean.parseBoolean(scanner.nextLine());
+              var filename = scanner.nextLine();
+              var wizard = new Wizard(name, isEvil);
+      
+              try {
+                  new Solution().doSerialization(wizard, filename);
+              } catch (IOException e) {
+                  System.out.println("Serialization failed.");
+              }
+      
+              Kryo kryo = new Kryo();
+              kryo.register(Wizard.class);
+              try (Input kryoInput = new Input(new FileInputStream(filename))) {
+      
+                  var deserialized = kryo.readObject(kryoInput, Wizard.class);
+      
+                  if (Objects.equals(deserialized.getName(), name)
+                          && deserialized.isEvil() == isEvil) {
+                      System.out.println("Two wizards look the same");
+                  } else {
+                      System.out.println("Two wizards are somewhat different");
+                  }
+              } catch (IOException e) {
+                  System.out.println("Didn't happen");
+              }
+          }
+      }
+    learner_created: false
+  - name: src/kryowizardry/Solution.java
+    visible: true
+    text: |
+      package kryowizardry;
+      
+      import com.esotericsoftware.kryo.Kryo;
+      import java.io.IOException;
+      
+      class Solution {
+          public void doSerialization(Wizard wizard, String filename) throws IOException {
+      
+          }
+      }
+    learner_created: false
+  - name: src/kryowizardry/Wizard.java
+    visible: true
+    text: |
+      package kryowizardry;
+      
+      public class Wizard {
+          private String name;
+          private boolean isEvil;
+      
+          public Wizard(String name, boolean isEvil) {
+              this.name = name;
+              this.isEvil = isEvil;
+          }
+      
+          public Wizard() {
+          }
+      
+          public String getName() {
+              return name;
+          }
+      
+          public void setName(String name) {
+              this.name = name;
+          }
+      
+          public boolean isEvil() {
+              return isEvil;
+          }
+      
+          public void setEvil(boolean evil) {
+              isEvil = evil;
+          }
+      }
+    learner_created: false
+  - name: test/KryoWizardryTests.java
+    visible: false
+    text: |
+      import org.hyperskill.hstest.dynamic.DynamicTest;
+      import org.hyperskill.hstest.dynamic.input.DynamicTesting;
+      import org.hyperskill.hstest.stage.StageTest;
+      import org.hyperskill.hstest.testcase.CheckResult;
+      import org.hyperskill.hstest.testing.TestedProgram;
+      
+      import java.io.IOException;
+      import java.nio.file.Files;
+      import java.nio.file.Path;
+      
+      import static org.hyperskill.hstest.testing.expect.Expectation.expect;
+      
+      public class KryoWizardryTests extends StageTest<Object> {
+      
+          CheckResult test(String name, String isEvil, String filename) {
+              TestedProgram program = new TestedProgram();
+              program.start();
+              program.execute(name);
+              program.execute(isEvil);
+              var output = program.execute(filename);
+      
+              var lines = expect(output).toContain().lines();
+              var solved = lines.stream().anyMatch("Two wizards look the same"::equals);
+      
+              try {
+                  var path = Path.of(filename);
+                  if (Files.exists(path)) {
+                      Files.delete(path);
+                  }
+              } catch (IOException ignored) {
+              }
+      
+              if (!solved) {
+                  return CheckResult.wrong("Deserialization failed to produce the same Wizard object");
+              }
+              return CheckResult.correct();
+          }
+      
+          @DynamicTest
+          DynamicTesting[] dt = new DynamicTesting[]{
+                  () -> test("Lord Voldemort", "true", "wizard1.bin"),
+                  () -> test("Harry Potter", "false", "wizard2.bin"),
+                  () -> test("Kuramor", "true", "wizard3.bin"),
+                  () -> test("Gululun", "false", "wizard4.bin")
+          };
+      }
+    learner_created: false
+  - name: build.gradle
+    visible: true
+    text: |
+      repositories {
+          mavenCentral()
+      }
+      
+      dependencies {
+          implementation "com.esotericsoftware:kryo:5.4.0"
+      }
+    learner_created: false
+  - name: wizard1.bin
+    visible: true
+    is_binary: true
+    learner_created: true
+feedback_link: https://hyperskill.org/learn/step/32172#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 19 Mar 2024 09:33:47 UTC"
+record: -1

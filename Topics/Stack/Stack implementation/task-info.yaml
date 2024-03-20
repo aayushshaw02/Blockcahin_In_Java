@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Queue Interface
+  - text: Stack Class
+  - text: Priority Queue
+  - text: Deque Interface
+  - text: Vector Class
+files:
+  - name: src/Task.java
+    visible: true
+    text: |
+      // You can experiment here, it won’t be checked
+      
+      public class Task {
+        public static void main(String[] args) {
+          // put your code here
+        }
+      }
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/20205#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 15 Mar 2024 04:43:52 UTC"
+record: -1
+selected_options:
+  - 3
+local_check: false
